@@ -29,6 +29,7 @@ if (operation == "x")
 int[] nums = {1, 3, 4, 2};
 Console.WriteLine($"Average: {CalculateAverage(nums)}");
 Console.WriteLine($"Max number: {CalculateMax(nums)}");
+Console.WriteLine($"Min number: {CalculateMin(nums)}");
 
 static double CalculateAverage(int[] values)
 {
@@ -53,5 +54,11 @@ static int CalculateMax(int[] values)
 
 static int CalculateMin(int[] values)
 {
-    return 0;
+    int currentMin = 1000;
+    foreach (int num in values)
+    {
+        if (num < currentMin)
+            currentMin = num;
+    }
+    return currentMin;
 }
