@@ -50,3 +50,8 @@ static int CalculateMax(int[] values)
     }
     return currentMax;
 }
+
+static int CalculateMin(int[] values)
+{
+    return 0;
+}
