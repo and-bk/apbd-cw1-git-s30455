@@ -26,10 +26,10 @@ if (operation == "x")
     Console.WriteLine($"{num1} : {num2} =  {num1 / num2}");
 }
 
-int[] nums = {1, 3, 4, 2};
-Console.WriteLine($"Average: {CalculateAverage(nums)}");
-Console.WriteLine($"Max number: {CalculateMax(nums)}");
-Console.WriteLine($"Min number: {CalculateMin(nums)}");
+int[] numbers = {1, 3, 4, 2};
+Console.WriteLine($"Average: {CalculateAverage(numbers)}");
+Console.WriteLine($"Max number: {CalculateMax(numbers)}");
+Console.WriteLine($"Min number: {CalculateMin(numbers)}");
 
 static double CalculateAverage(int[] values)
 {
