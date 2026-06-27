@@ -26,8 +26,9 @@ if (operation == "x")
     Console.WriteLine($"{num1} : {num2} =  {num1 / num2}");
 }
 
-int[] nums = { 1, 2, 3, 4 };
+int[] nums = {1, 3, 4, 2};
 Console.WriteLine($"Average: {CalculateAverage(nums)}");
+Console.WriteLine($"Max number: {CalculateMax(nums)}");
 
 static double CalculateAverage(int[] values)
 {
@@ -37,4 +38,15 @@ static double CalculateAverage(int[] values)
         sum += num;
     }
     return (double)sum /  values.Length;
+}
+
+static int CalculateMax(int[] values)
+{
+    int currentMax = 0;
+    foreach (int num in values)
+    {
+        if(num > currentMax)
+            currentMax = num;
+    }
+    return currentMax;
 }
