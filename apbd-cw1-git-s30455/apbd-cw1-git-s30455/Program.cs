@@ -27,14 +27,14 @@ if (operation == "x")
 }
 
 int[] nums = { 1, 2, 3, 4 };
-Console.WriteLine($"Sum: {CalculateAverage(nums)}");
+Console.WriteLine($"Average: {CalculateAverage(nums)}");
 
-static int CalculateAverage(int[] values)
+static double CalculateAverage(int[] values)
 {
     int sum = 0;
     foreach (int num in values)
     {
         sum += num;
     }
-    return sum;
+    return (double)sum /  values.Length;
 }
