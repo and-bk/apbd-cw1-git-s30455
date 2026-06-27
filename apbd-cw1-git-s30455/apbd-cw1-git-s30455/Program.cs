@@ -25,3 +25,16 @@ if (operation == "x")
     Console.WriteLine($"{name}, {age}");
     Console.WriteLine($"{num1} : {num2} =  {num1 / num2}");
 }
+
+int[] nums = { 1, 2, 3, 4 };
+Console.WriteLine($"Sum: {CalculateAverage(nums)}");
+
+static int CalculateAverage(int[] values)
+{
+    int sum = 0;
+    foreach (int num in values)
+    {
+        sum += num;
+    }
+    return sum;
+}
